@@ -6,16 +6,28 @@
 .grid_conteiner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 25%;
-  height: 1700px;
+  height: 1500px;
   width: 100%;
   background-color: palevioletred;
 }
 .grid_conteiner div {
 }
 .item1 {
+  display: flex;
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: aqua;
+  background-color: #fff;
+  align-items: end;
+}
+.item_full {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.item_full img {
+  display: flex;
+  width: 50%;
+  align-items: end;
 }
 .intro {
   width: 250px;
@@ -43,21 +55,103 @@
 .item2 {
   grid-column-start: 3;
   grid-column-end: 6;
-  background-color: aquamarine;
+  background-color: #f7f8f9;
+}
+.item2_full {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+  align-items: center;
+}
+.item2_full title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item2_full a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item2 h1 {
+  font-size: 40px;
+  line-height: 1.4em;
 }
 .item3 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-color: antiquewhite;
+  background-color: #f05638;
+}
+.item3_full {
+  margin-top: 30px;
+}
+.item3_full h3 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  color: #fffbfb;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.item3_full a {
+  color: #ffc80a;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 700;
 }
 .item4 {
   grid-column-start: 2;
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-color: azure;
+  background-color: #fff;
+}
+.item4_full {
+  display: flex;
+}
+.left {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left h3 {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #333;
+}
+.left img {
+  width: 450px;
+  height: 164px;
+  display: flex;
+  justify-content: center;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right .text {
+  line-height: 26px;
+  font-size: 14px;
+  color: #9fa3a7;
+  line-height: 20px;
+}
+.right a {
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #27b9c2;
 }
 .item5 {
   background-color: aqua;
